@@ -5,6 +5,7 @@ import ssd1306
 import urequests
 import network
 import time
+import credentials
 
 #Initialize i2c connection and ssd1306 to communicate over i2c
 
@@ -26,8 +27,10 @@ display.show()
 
 #WiFi credentials
 
-ssid = 'XXXXXX'
-pw = 'XXXXXXXXXX'
+ssid = credentials.ssid
+pw = credentials.pw
+
+message_url = credentials.message_url
 
 def idle(msecs):
     rtc = machine.RTC()
@@ -78,7 +81,7 @@ while True:
     
     #request response from webserver, most recent post
     
-    request = urequests.get(url='XXXXXXXXXXXXXXXXXXXXXXXX')
+    request = urequests.get(url=message_url)
 
     #parse response
     
@@ -89,6 +92,11 @@ while True:
     
     disable_wifi()
     
-    for i in range(360):
+    #Keep powerbank awake
+    
+    for i in range(240):
         wake_up_powerbank(wakeup_pin)
-        time.sleep(10)
+        time.sleep(15)
+        
+    
+
