@@ -1,6 +1,8 @@
 # Parent-portal
 An ESP8266 microcontroller that updates a tiny display at regular intervals with Twitter-like messages. Created for the parents' fridge to keep them apprised of important developments or miscellaneous facts.
 
+![Parent Portal](https://github.com/gcappaert/parent-portal/blob/main/20221127_172730.jpg)
+
 ## The developer
 
 An underemployed 31 year old physician assistant on a visit his parents.
