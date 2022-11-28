@@ -29,8 +29,6 @@ display.show()
 ssid = 'XXXXXX'
 pw = 'XXXXXXXXXX'
 
-#Website authentication
-
 def idle(msecs):
     rtc = machine.RTC()
     rtc.irq(trigger=rtc.ALARM0, wake=machine.IDLE)
