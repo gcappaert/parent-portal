@@ -81,7 +81,7 @@ while True:
     
     #request response from webserver, most recent post
     
-    request = urequests.get(url=message_url)
+    request = urequests.get(url=message_url,headers=credentials.http_headers)
 
     #parse response
     
@@ -99,4 +99,5 @@ while True:
         time.sleep(15)
         
     
+
 
