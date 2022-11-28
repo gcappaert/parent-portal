@@ -15,4 +15,4 @@ An underemployed 31 year old physician assistant on a visit his parents.
 * USB powerbank
 * 2n2222a transistor with 1K and 100 ohm resistors to trick a standard USB powerbank into continuing to run.
 
-
+![Terrible Schematic](https://github.com/gcappaert/parent-portal/blob/main/terrible%20schematic.png)
